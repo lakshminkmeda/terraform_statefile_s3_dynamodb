@@ -9,11 +9,8 @@ terraform {
     bucket = "tf-backend-s3-bucket"
     key = "terraform/terraform.tfstate"
     dynamodb_table = "terraform-lock"
+    region = "eu-north-1"
   }
-}
-
-provider "aws" {
-  region = "eu-north-1"
 }
 
 resource "aws_s3_bucket" "s3" {
