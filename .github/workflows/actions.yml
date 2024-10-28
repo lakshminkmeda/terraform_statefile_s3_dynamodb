@@ -27,8 +27,6 @@ jobs:
                 python -m pip install awscli
                 aws --version
                 aws s3 ls
-              env: 
-
 
             - name: Terraform init
               run: |
