@@ -40,8 +40,6 @@ jobs:
               run: terraform validate
             - name: Terraform plans
               run: terraform plan
-            - name: Terraform apply
-              run: terraform apply --auto-approve
 
     deploy:
         runs-on: ubuntu-latest
